@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: stusmart-java
+    env: java
+    buildCommand: mvn package
+    startCommand: java -jar target/*.jar
+    plan: free
