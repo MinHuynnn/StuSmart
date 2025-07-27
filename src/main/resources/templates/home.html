@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>StuSmart - Chọn vai trò</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome (icon) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-shape {
+            background-color: #0056d2;
+            height: 160px;
+            border-bottom-left-radius: 50% 40%;
+            border-bottom-right-radius: 50% 40%;
+            position: relative;
+            text-align: center;
+        }
+
+        .logo-circle {
+            width: 160px;
+            height: 160px;
+            background-color: white;
+            border-radius: 50%;
+            border: 4px solid #0056d2;
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-circle img {
+            width: 80%;
+        }
+
+        .role-selection {
+            margin-top: 120px;
+            text-align: center;
+        }
+
+        .role-selection h5 {
+            color: #0056d2;
+            margin-bottom: 30px;
+        }
+
+        .role-buttons .btn {
+            width: 130px;
+            height: 130px;
+            font-size: 16px;
+            background-color: #0056d2;
+            color: white;
+            border-radius: 20px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .role-buttons .btn i {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header và logo -->
+<div class="header-shape">
+    <div class="logo-circle">
+        <img src="https://i.imgur.com/6rGzK8e.png" alt="Logo"> <!-- thay logo nếu cần -->
+    </div>
+</div>
+
+<!-- Vai trò lựa chọn -->
+<div class="role-selection">
+    <h5>Sự lựa chọn của bạn</h5>
+    <div class="d-flex justify-content-center role-buttons">
+        <a href="/student/login" class="btn">
+            <i class="fas fa-user-graduate"></i>
+            Học Sinh
+        </a>
+        <a href="/teacher/login" class="btn">
+            <i class="fas fa-chalkboard-teacher"></i>
+            Giáo Viên
+        </a>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
